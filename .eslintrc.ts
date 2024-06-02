@@ -9,7 +9,16 @@ module.exports = {
   },
   extends: ["plugin:prettier/recommended"],
   rules: {
-    "prettier/prettier": "warn",
+    "prettier/prettier": [
+      "warn",
+      {
+        singleQuote: true,
+        semi: true,
+        trailingComma: "none",
+        printWidth: 120,
+        tabWidth: 2,
+      },
+    ],
   },
   overrides: [
     {
@@ -30,7 +39,16 @@ module.exports = {
         "no-plusplus": "off",
         "no-underscore-dangle": "off",
         "import/prefer-default-export": "off",
-        "prettier/prettier": "warn",
+        "prettier/prettier": [
+          "warn",
+          {
+            singleQuote: true,
+            semi: true,
+            trailingComma: "none",
+            printWidth: 120,
+            tabWidth: 2,
+          },
+        ],
       },
     },
   ],
